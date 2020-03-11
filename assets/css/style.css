@@ -1484,7 +1484,8 @@ select:focus {
 /* Features Area End */
 /* Featured Game Area Start */
 .featured-game {
-  padding: 0px 0px 120px;
+  position: relative;
+  padding: 0px 0px 10px;
   /*background: url(../images/featuredgame-bg.jpg);*/
   background-color: #553981;
   background-position: center;
@@ -4282,20 +4283,18 @@ select:focus {
 }
 
 #search1 input[type="text"] {
-  background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/search-20.png) no-repeat left center #FFF;
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/search-20.png) no-repeat left center #FFF;
     font-size: 13px;
     color: #222;
-    width: 241px;
+    width: 185px;
     padding: 10px 0px 11px 30px;
-    /* z-index: 9; */
+    z-index: 9;
     border: 1px solid #e4e4e4;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     position: absolute;
-    /* top: -25px; */
-    /* left: 60px; */
-    bottom: 18px;
-    right: -71px;
+    right: 155px;
+    top: 12px;
 }
 #mobile{
     display:none;
