@@ -30,9 +30,9 @@ $(function ($) {
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
         nav: true,
         dots: false,
-        autoplay: false,
+        autoplay: true,
         margin: 0,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         smartSpeed: 1000,
         responsive: {
             0: {

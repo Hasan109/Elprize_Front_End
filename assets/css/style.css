@@ -1222,7 +1222,7 @@ select:focus {
 /* Hero Area Start */
 .hero-area {
   position: relative;
-  padding: 317px 0px 354px;
+  padding: 0px 0px 354px;
   position: relative;
   background: #553981;
   overflow: hidden; }
@@ -4241,3 +4241,70 @@ select:focus {
   font-size: 20px; }
 
 /* login modal Area End */
+.elprize_video{
+  width: 100%;
+  height: 500px; 
+}
+.video{
+  width: 100%; 
+  height: 0; 
+  position: relative; 
+  padding-bottom: 56.25%;
+}
+
+.video iframe {
+  width: 100%; 
+  height: 500px; 
+  position: absolute; 
+  top: 0; left: 0; 
+  margin: 0 auto;
+}
+
+#search input[type="text"]:hover 
+{ 
+  width:220px;
+  border:1px solid #CCC;
+}
+
+#search input[type="text"] {
+    background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/search-20.png) no-repeat left center #FFF;
+    font-size: 13px;
+    color: #222;
+    width: 160px;
+    padding: 10px 0px 11px 30px;
+    z-index: 9;
+    border: 1px solid #e4e4e4;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: -25px;
+    left: 60px;
+}
+
+#search1 input[type="text"] {
+  background: url(https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/search-20.png) no-repeat left center #FFF;
+    font-size: 13px;
+    color: #222;
+    width: 241px;
+    padding: 10px 0px 11px 30px;
+    /* z-index: 9; */
+    border: 1px solid #e4e4e4;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    position: absolute;
+    /* top: -25px; */
+    /* left: 60px; */
+    bottom: 18px;
+    right: -71px;
+}
+#mobile{
+    display:none;
+}
+@media only screen and (max-device-width : 450px) {
+    #desktop   {
+        display: none;
+    }
+    #mobile {
+        display:block;
+    }
+}

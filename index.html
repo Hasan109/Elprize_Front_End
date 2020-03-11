@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="assets/css/plugin.css">
 
 	<!-- stylesheet -->
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/style.css" media="All">
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -54,13 +54,29 @@
 										</p>
 									</li>
 									<li>
+											<div class="language-selector">
+												<select name="language" class="language">
+													<option value="1">English</option>
+													<option value="2">France</option>
+													<option value="3">Japan</option>
+												</select>
+											</div>
+									</li>
+									<li>
+										<section id="desktop">
 										<div class="language-selector">
-											<select name="language" class="language">
-												<option value="1">English</option>
-												<option value="2">France</option>
-												<option value="3">Japan</option>
-											</select>
+											<form action="" id="search" method="get">
+												<input name="q" placeholder="Searh" size="40" type="text">
+											</form>
 										</div>
+										</section>
+										<section id="mobile">
+										<div class="language-selector1">
+											<form action="" id="search1" method="get">
+												<input name="q" placeholder="Search" size="40" type="text">
+											</form>
+										</div>
+										</section>
 									</li>
 								</ul>
 							</div>
@@ -249,7 +265,7 @@
 
 	<!-- Hero Area Start -->
 	<div class="hero-area">
-		<div class="container">
+		<!-- <div class="container">
 			<div class="row">
 				<div class="col-lg-5 d-flex align-self-center">
 					<div class="left-content">
@@ -292,9 +308,11 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- Hero Area End -->
+
+	
 
 	<!-- Featured Game Area Start -->
 	<section class="featured-game">
@@ -309,11 +327,11 @@
 									<div class="col-lg-4 col-md-6">
 										<div class="single-feature">
 											<div class="icon one">
-												<img src="assets/images/feature/icon1.png" alt="">
+												<img src="assets/images/lottery/st1.png" alt="">
 											</div>
 											<div class="content">
 												<h4 class="title">
-													Exclusive Offer
+													Lotoreya
 												</h4>
 												<a href="#" class="link">read more <i class="fas fa-arrow-right"></i></a>
 											</div>
@@ -322,11 +340,11 @@
 									<div class="col-lg-4 col-md-6">
 										<div class="single-feature">
 											<div class="icon two">
-												<img src="assets/images/feature/icon2.png" alt="">
+												<img src="assets/images/play/icon1.png" alt="">
 											</div>
 											<div class="content">
 												<h4 class="title">
-													Provably Fair
+													Games
 												</h4>
 												<a href="#" class="link">read more <i class="fas fa-arrow-right"></i></a>
 											</div>
@@ -335,11 +353,11 @@
 									<div class="col-lg-4 col-md-6">
 										<div class="single-feature">
 											<div class="icon three">
-												<img src="assets/images/feature/icon3.png" alt="">
+												<img src="assets/images/shop.png" alt="">
 											</div>
 											<div class="content">
 												<h4 class="title">
-														24/7 Support
+														Shoppings
 												</h4>
 												<a href="#" class="link">read more <i class="fas fa-arrow-right"></i></a>
 											</div>
@@ -353,6 +371,24 @@
 			</div>
 		</div>
 		<!-- Features Area End -->
+
+
+		<!-- Elprize Video Area Start -->
+	
+	<section class="elprize_video" >
+		<div class="container-fluid">
+			<div class="col-lg-12 col-xs-12">
+				<div class="row">
+					<div class="video"  >
+						<iframe   src="https://www.youtube.com/embed/Um63OQz3bjo" frameborder="0" allow="accelerometer; control; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Elprize Video Area  End -->
+	<section>
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-10">
@@ -402,9 +438,7 @@
 		</div>
 	</section>
 	<!-- Featured Game Area	End -->
-
-	<!-- Latest Activities Area Start -->
-	 <section class="activities">
+ <section class="activities">
 		 <img class="shape shape1" src="assets/images/people/shape1.png" alt="">
 		 <img class="shape shape2" src="assets/images/people/shape2.png" alt="">
 		 <img class="shape shape3" src="assets/images/people/shape3.png" alt="">
@@ -431,12 +465,6 @@
 						<ul class="nav nav-lend mb-3" id="pills-tab" role="tablist">
 							<li class="nav-item">
 								<a class="nav-link active" id="pills-all-bets-tab" data-toggle="pill" href="#pills-all-bets" role="tab" aria-controls="pills-all-bets" aria-selected="true">All bets</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="pills-my-bets-tab" data-toggle="pill" href="#pills-my-bets" role="tab" aria-controls="pills-my-bets" aria-selected="false">my bets</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="pills-my-jackpots-tab" data-toggle="pill" href="#pills-my-jackpots" role="tab" aria-controls="pills-my-jackpots" aria-selected="false">jackpots</a>
 							</li>
 						</ul>
 					</div>
@@ -649,500 +677,16 @@
 								</table>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="pills-my-bets" role="tabpanel" aria-labelledby="pills-my-bets-tab">
-							<div class="responsive-table">
-									<table class="table">
-											<thead>
-												<tr>
-												<th scope="col">USER</th>
-												<th scope="col">BET ID</th>
-												<th scope="col">BET AMOUNT</th>
-												<th scope="col">CHANCE</th>
-												<th scope="col">GAME</th>
-												<th scope="col">PROFIT</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<img src="assets/images/people/p1.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p2.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p3.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p4.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p5.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p6.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p1.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p2.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p3.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p4.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-											</tbody>
-											</table>
-							</div>
-						</div>
-						<div class="tab-pane fade" id="pills-my-jackpots" role="tabpanel" aria-labelledby="pills-my-jackpots-tab">
-							<div class="responsive-table">
-									<table class="table">
-											<thead>
-												<tr>
-												<th scope="col">USER</th>
-												<th scope="col">BET ID</th>
-												<th scope="col">BET AMOUNT</th>
-												<th scope="col">CHANCE</th>
-												<th scope="col">GAME</th>
-												<th scope="col">PROFIT</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<img src="assets/images/people/p1.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p2.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p3.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p4.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p5.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p6.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon1.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p1.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon2.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p2.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon3.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p3.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon4.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="assets/images/people/p4.png" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="assets/images/icon5.png" alt="">
-														0.00000051
-													</td>
-												</tr>
-											</tbody>
-											</table>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Fun fact Area Start -->
-		<div class="funfact">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="single-fun">
-							<img src="assets/images/funfact/icon1.png" alt="">
-							<div class="count-area">
-								<div class="count">93K</div>
-							</div>
-							<p>
-									Players
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-fun">
-							<img src="assets/images/funfact/icon2.png" alt="">
-							<div class="count-area">
-								<div class="count">99+</div>
-							</div>
-							<p>
-									Games
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-fun">
-							<img src="assets/images/funfact/icon3.png" alt="">
-							<div class="count-area">
-								<div class="count">70+</div>
-							</div>
-							<p>
-									Winners
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		<!-- Fun fact Area End -->
 	</section> 
-	<!-- Latest Activities Area End -->
-
-
-	<!-- Get Start Area Start -->
-	 <section class="get-start">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 d-flex align-self-center">
-					<div class="left-area">
-						<div class="section-heading">
-							<h5 class="subtitle2">
-								EVERY DAY LOTS OF  WINS
-							</h5>
-							<h2 class="title ">
-									be one of them
-							</h2>
-							<p class="text">
-									Get started in less than 5 min - no credit card 
-									required.Gain early access to Dooplo and  experience crypto like never before. 
-							</p>
-							<a href="#" class="mybtn1">Play  Now!</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-5">
-					<div class="right-image">
-						<img src="assets/images/get-start.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> 
+	<!-- Latest Activities Area Start -->
+		
 	<!-- Get Start Area End -->
 
 	<!-- Recent Winners Area Start -->
@@ -1255,38 +799,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="subscribe-box">
-								<form action="#">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="heading-area">
-											<h5 class="sub-title2">
-													SUBSCRIBE TO DOOPLO
-											</h5>
-											<h4 class="title">
-													To Get Exclusive Benefits
-											</h4>
-									</div>
-								</div>
-								<div class="col-lg-3 col-4 d-flex align-self-center">
-									<div class="icon">
-										<img src="assets/images/mail-box.png" alt="">
-									</div>
-								</div>
-								<div class="col-lg-6 col-8 d-flex align-self-center">
-									<div class="form-area">
-											<input type="text" placeholder="Your Email Address">
-									</div>
-								</div>
-								<div class="col-lg-3 d-flex align-self-center">
-									<div class="button-area">
-										<button class="mybtn1" type="submit">Subscribe
-											<span><i class="fas fa-paper-plane"></i></span>
-										</button>
-									</div>
-								</div>
-							</div>
-						</form>
+						
+						
 						</div>
 					</div>
 				</div>
