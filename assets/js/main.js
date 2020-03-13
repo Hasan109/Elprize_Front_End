@@ -211,3 +211,43 @@ $(function ($) {
    
 
 });
+
+
+let per=document.querySelector(".per");
+
+let acc= document.querySelector(".acc");
+
+let personalInfo= document.getElementById("personalInfo");
+
+let account= document.getElementById("account");
+
+per.addEventListener("click", function(){
+    personalInfo.style.display = 'block';
+    account.style.display = 'none';
+})
+
+acc.addEventListener("click", function(){
+    account.style.display = 'block';
+    personalInfo.style.display = 'none';
+})
+
+let directRegs= document.getElementById("directRegs");
+
+let signin= document.getElementById("signin");
+
+let login= document.getElementById("login");
+
+
+
+ directRegs.addEventListener("click", function(e){
+         login.style.display = 'none';
+         signin.style.display = 'block';
+           this.classList.remove("modal-backdrop") ;
+
+ })
+
+    $(document).ready(function(){
+$('#action_menu_btn').click(function(){
+    $('.action_menu').toggle();
+});
+    });
