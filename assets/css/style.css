@@ -4861,10 +4861,13 @@ select:focus {
 .section-controller nav ul li:hover{
   color:#fec200;
   border-color: #fec200;
+<<<<<<< HEAD
   background-color:#1c2652;
 }
 #section-selector-active{
   color:#fec200;
   background-color:#1c2652;
   border-color:#1c2652;
+=======
+>>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
 }

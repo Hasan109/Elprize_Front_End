@@ -25,7 +25,10 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<style>
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
 		.hidden-section{
 			display:none;
 		}
@@ -289,9 +292,15 @@
 	<div class="section-controller prof" style="padding: 100px;">
 		<nav style="width:100%;padding:0;display: flex;justify-content: center;">
 			<ul>
+<<<<<<< HEAD
 				<li class="ss1" id="section-selector-active" onclick="openProfile(this)"><span>My Profile</span></li>
 				<li class="ss2" id="" onclick="openGames(this)"><span>Games</span></li>
 				<li class="ss3" id="" onclick="openLottery(this)"><span>Lottery</span></li>
+=======
+				<li onclick="openProfile()"><span>My Profile</span></li>
+				<li onclick="openGames()"><span>Games</span></li>
+				<li onclick="openLottery()"><span>Lottery</span></li>
+>>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
 			</ul>
 		</nav>
 	</div>
@@ -584,8 +593,12 @@
 					<div>
 						<button class="mybtn2 prt" > Update</button>
 
+<<<<<<< HEAD
 
 						<a href="#" style="margin:0;margin-top:10px; text-align: center;" class="mybtn2 EditFile"  data-toggle="modal" data-target="#exch"> Exchange</a>
+=======
+						<button style="margin:0;margin-top:10px" class="mybtn2 EditFile"> Create Reklam</button>
+>>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
 					</div>
 			    </div>
 				</div>
@@ -1645,6 +1658,7 @@
 	<script src="assets/js/mousemoveparallax.js"></script>
 	<!-- main -->
 	<script src="assets/js/main.js"></script>
+<<<<<<< HEAD
 
 	<script src="assets/js/click.js"></script>
 
@@ -1660,20 +1674,36 @@ $('#section-controller-games').hide()
 		function openGames(obj){
 			clearID()
 			obj.setAttribute('id','section-selector-active')
+=======
+	<script>
+
+$('#section-controller-games').hide()
+			$('#section-controller-profile').hide()
+			$('#section-controller-lottery').hide()
+		function openGames(){
+>>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
 			$('#section-controller-games').show()
 			$('#section-controller-profile').hide()
 			$('#section-controller-lottery').hide()
 		}
+<<<<<<< HEAD
 		function openLottery(obj){
 			clearID()
 			obj.setAttribute('id','section-selector-active')
+=======
+		function openLottery(){
+>>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
 			$('#section-controller-games').hide()
 			$('#section-controller-profile').hide()
 			$('#section-controller-lottery').show()
 		}
+<<<<<<< HEAD
 		function openProfile(obj){
 			clearID()
 			obj.setAttribute('id','section-selector-active')
+=======
+		function openProfile(){
+>>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
 			$('#section-controller-games').hide()
 			$('#section-controller-profile').show()
 			$('#section-controller-lottery').hide()
