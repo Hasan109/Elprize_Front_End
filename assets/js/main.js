@@ -169,7 +169,29 @@ $(function ($) {
     
     });
 
+    let elPrize= document.getElementById("elPrize");
 
+    let dollar= document.getElementById("dollar");
+
+    let chngBtn= document.getElementById("chngBtn1");
+
+    let valyuta=elPrize.value;
+
+    elPrize.addEventListener("focusout", function(){
+
+         dollar.value=elPrize.value*50;
+      
+    })
+    elPrize.addEventListener("mouseover", function(){
+
+         dollar.value=elPrize.value*50;
+      
+    })
+
+    chngBtn.addEventListener("mouseover", function(){
+         dollar.value=elPrize.value*50;
+    })
+  
 
     
     /*-----------------------------
