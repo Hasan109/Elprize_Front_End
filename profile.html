@@ -22,6 +22,9 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	<style>
+		.hidden-section{
+			display:none;
+		}
 		.input-group-text{
 			width:100px;
 			color:#553981;
@@ -29,6 +32,28 @@
 		button{
 			outline:none!important;
 		}
+		.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.upload-profile-picture{
+	text-align: center!important;
+	background-color: #e9ecef;
+	color:#553981;
+	padding: 15px;
+	border-radius: 10px;	
+	transition: 0.3s all ease-out;		
+	border: 2px solid #e9ecef;	
+	cursor:pointer;  
+}
+.upload-profile-picture:hover{
+	background-color:#553981;
+	color:#e9ecef;
+}
 	</style>
 </head>
 
@@ -257,15 +282,23 @@
 		<!--Main-Menu Area Start-->
 	</header>
 	<!-- Header Area End  -->
-<section class="prof">
+	<div class="section-controller prof" style="padding: 100px;">
+		<nav style="width:100%;padding:0;display: flex;justify-content: center;">
+			<ul>
+				<li onclick="openProfile()"><span>My Profile</span></li>
+				<li onclick="openGames()"><span>Games</span></li>
+				<li onclick="openLottery()"><span>Lottery</span></li>
+			</ul>
+		</nav>
+	</div>
+<section style="padding-top:0!important" id="section-controller-profile" class="prof">
 	<div class="container">
 		<div class="row pad">
 			<div class="col-md-4 ">
 				<div class="wrapper my-5">
 						<div class="profImage my-5">
-							<img src="assets/images/avatar.png" alt="">
+							<img style="width:200px;height:200px;" src="assets/images/avatar.png" alt="">
 						</div>
-						<button class="mybtn2 EditFile"> Update</button>
 			</div>
 		</div>
 		<div class="col-md-8">
@@ -282,17 +315,11 @@
 					</div> -->
 					<div class="input-group mx-auto" >
 						  <div class="input-group-prepend">
-						    <span class="input-group-text" id="">Firstname</span>
+						    <span class="input-group-text" id="">Full name</span>
 						  </div>
-						  <input type="text" disabled class="form-control" value="Hasan">
+						  <input type="text" disabled class="form-control" value="Hasan Imanov">
 					</div>
-					<div class="input-group my-3">
-					    <div class="input-group-prepend">
-					      <span class="input-group-text" id="">Lastname</span>
-					    </div>
-					    <input type="text" disabled class="form-control" value="Imanov">
-					</div>
-					<div class="input-group ">
+					<div style="margin-top: 16px;" class="input-group ">
 					  <div class="input-group-prepend">
 					    <span class="input-group-text" id="">Country</span>
 					  </div>
@@ -547,13 +574,13 @@
 					  <!-- <input type="text" disabled class="form-control" value="Azerbaijan"> -->
 					</div>
 					<div class="input-group my-3 ">
-					  <div class="input-group-prepend">
-					    <span class="input-group-text" id="">Image</span>
-					  </div>
-					  <input type="file" disabled class="form-control" value="">
+					  <input id="file" name="file" type="file" class="inputfile" value="">
+					  <label class="upload-profile-picture" for="file">Upload profile picture</label>
 					</div>
 					<div>
-						<button class="mybtn2 prt" > Create Reklam</button>
+						<button class="mybtn2 prt" > Update</button>
+
+						<button style="margin:0;margin-top:10px" class="mybtn2 EditFile"> Create Reklam</button>
 					</div>
 			    </div>
 				</div>
@@ -562,7 +589,7 @@
 </section>
 	
 
-	<section class="tournaments">
+	<section style="padding-top:0!important" id="section-controller-games" class="tournaments">
 		<div class="info-table">
 			<div class="container">
 				<div class="row">
@@ -1024,7 +1051,7 @@
 
 		
 
-<section class="activities">
+<section style="padding-top:0!important"  id="section-controller-lottery" class="activities">
 		 <img class="shape shape1" src="assets/images/people/shape1.png" alt="">
 		 <img class="shape shape2" src="assets/images/people/shape2.png" alt="">
 		 <img class="shape shape3" src="assets/images/people/shape3.png" alt="">
@@ -1032,13 +1059,7 @@
 			
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="tab-menu-area">
-						<ul class="nav nav-lend mb-3 my-5" id="pills-tab" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active" id="pills-all-bets-tab" data-toggle="pill" href="#pills-all-bets" role="tab" aria-controls="pills-all-bets" aria-selected="true">Lottery</a>
-							</li>
-						</ul>
-					</div>
+					
 					<div class="tab-content" id="pills-tabContent">
 						<div class="tab-pane fade show active" id="pills-all-bets" role="tabpanel" aria-labelledby="pills-all-bets-tab">
 							<div class="responsive-table">
@@ -1586,6 +1607,27 @@
 	<script src="assets/js/mousemoveparallax.js"></script>
 	<!-- main -->
 	<script src="assets/js/main.js"></script>
+	<script>
+
+$('#section-controller-games').hide()
+			$('#section-controller-profile').hide()
+			$('#section-controller-lottery').hide()
+		function openGames(){
+			$('#section-controller-games').show()
+			$('#section-controller-profile').hide()
+			$('#section-controller-lottery').hide()
+		}
+		function openLottery(){
+			$('#section-controller-games').hide()
+			$('#section-controller-profile').hide()
+			$('#section-controller-lottery').show()
+		}
+		function openProfile(){
+			$('#section-controller-games').hide()
+			$('#section-controller-profile').show()
+			$('#section-controller-lottery').hide()
+		}
+	</script>
 </body>
 
 
