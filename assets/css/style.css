@@ -4821,3 +4821,18 @@ select:focus {
     height: 489px;
     display: none;
 }
+
+/* Coin rain */
+#coins-rain{
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+}
+#coins-rain img{
+  opacity: 1;
+  position: absolute;
+  width:50px;
+  animation: fall 5s linear;
+}
