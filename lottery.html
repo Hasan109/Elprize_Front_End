@@ -19,6 +19,9 @@
 
 	<!-- stylesheet -->
 	<link rel="stylesheet" href="assets/css/style.css">
+
+	<link rel="stylesheet" href="assets/css/click.css">
+
 	<!-- responsive -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -249,7 +252,7 @@
 	<!-- Header Area End  -->
 
 	<!-- Breadcrumb Area Start -->
-	<section class="breadcrumb-area bc-lottery">
+	<!-- <section class="breadcrumb-area bc-lottery">
 		<img class="bc-img" src="assets/images/breadcrumb/lottery.png" alt="">
 		<div class="container">
 			<div class="row">
@@ -274,79 +277,20 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- Breadcrumb Area End -->
 
 	<!-- Lottery Staticstics Area Start -->
 	<section class="lottery-area">
-		<div class="lottery-staticstics">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="single-staticstics">
-							<div class="left">
-								<div class="icon">
-									<img src="assets/images/lottery/st1.png" alt="">
-								</div>
-							</div>
-							<div class="right">
-								<h4 class="title">Lottery Jackpot</h4>
-								<div class="count">
-									<img src="assets/images/icon1.png" alt="">
-									<span>0.416250</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-staticstics">
-							<div class="left">
-								<div class="icon">
-									<img src="assets/images/lottery/st2.png" alt="">
-								</div>
-							</div>
-							<div class="right">
-								<h4 class="title">Purchased Tickets</h4>
-								<div class="count">
-									<img src="assets/images/tikit-icon.png" alt="">
-									<span>120</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-staticstics">
-							<div class="left">
-								<div class="icon">
-									<img src="assets/images/lottery/st2.png" alt="">
-								</div>
-							</div>
-							<div class="right">
-								<h4 class="title">My Tickets</h4>
-								<div class="count">
-									<img src="assets/images/tikit-icon.png" alt="">
-									<span>02</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="daily-lottery">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-8 col-md-10">
 						<div class="section-heading">
-							<h5 class="subtitle2">
-								Try to check out our
-							</h5>
+							
 							<h2 class="title">
 								Daily Lottery
 							</h2>
-							<p class="text">
-								We update our site regularly; more and more winners are added every day! To locate the most recent winner's information
-							</p>
 						</div>
 					</div>
 				</div>
@@ -357,7 +301,7 @@
 									Lottery Draw Starts In:
 							</h5>
 							<div class="draw-counter">
-									<div data-countdown="2021/12/15"></div>
+									<div data-countdown="2020/03/15"></div>
 							</div>
 							<p class="text">
 									To meet Today's challenges
@@ -368,7 +312,7 @@
 				
 			</div>
 		</div>
-		<div class="buy-tickets">
+		<!-- <div class="buy-tickets">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -526,12 +470,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</section>
 	<!-- Lottery Staticstics  Area End -->
 		
 	<!-- Latest Activities Area Start -->
-	<section class="activities">
+	<!-- <section class="activities">
 		<img class="shape shape1" src="assets/images/people/shape1.png" alt="">
 		<img class="shape shape2" src="assets/images/people/shape2.png" alt="">
 		<img class="shape shape3" src="assets/images/people/shape3.png" alt="">
@@ -1156,9 +1100,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- How it Work Area Start -->
-		<div class="how-it-work">
+		</div> -->
+		<!-- How it Work Area Start  -->
+	<!-- 	<div class="how-it-work">
 			<img class="bg-shape" src="assets/images/howitwork/bg-shape.png" alt="">
 			<div class="container">
 			<div class="row justify-content-center">
@@ -1215,9 +1159,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- How it Work Area Start -->
-	</section> 
+	<!-- </section>   -->
 	<!-- Latest Activities Area End -->
 
 	<!-- lottery video Area Start -->
@@ -1226,10 +1170,11 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-10">
 					<div class="video-box">
-						<a href="#" class="video-play-btn video-icon mfp-iframe">
-							<img src="assets/images/play-icon-red.png" alt="">
+						<a href="#" class="video-play-btn video-icon" >
+							<img id="videoicon" src="assets/images/play-icon-red.png" alt="">
 						</a>
 					</div>
+						<video id="videoContent" class="vidolar" onended="Videoss()" data-hasprice="true" autoplay muted  src="assets/images/empori.mp4" autoplay  type="video/mp4"></video>
 				</div>
 			</div>
 		</div>
@@ -1237,182 +1182,16 @@
 	<!-- lottery video Area End -->
 
 	<!-- Questions Area Start -->
-	<section class="question-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<img src="assets/images/question-left.png" alt="">
-				</div>
-				<div class="col-lg-6">
-					<div class="section-heading">
-						<h5 class="subtitle2">
-								If you have any
-						</h5>
-						<h2 class="title">
-								questions
-						</h2>
-						<p class="text">
-								Our top priorities are to protect your privacy, 
-								provide secure transactions, and safeguard your data. 
-						</p>
-						<p class="text">
-								When you're ready to play, registering an 
-								account is required so we know you're of legal age and so no one else can use your account.We answer the most commonly asked lotto 
-								questions..
-						</p>
-						<a href="#" class="mybtn1">Check FAQs</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<!-- Questions Area End -->
 
 	<!-- Recent Winners Area Start -->
-	<section class="recent-winners">
-		<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 col-md-10">
-						<div class="section-heading">
-							<h5 class="subtitle2">
-								Try to Check out our
-							</h5>
-							<h2 class="title">
-									Recent Winners
-							</h2>
-							<p class="text">
-								We update our site regularly; more and more winners are added every day! To locate the most recent winner's information
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="single-winer">
-							<div class="top-area">
-								<div class="left">
-									<h4 class="name">
-											Leroy Roy 
-									</h4>
-									<p class="date">
-											01.08.2019
-									</p>
-								</div>
-								<div class="right">
-									<p class="id">#5747e75482</p>
-								</div>
-							</div>
-							<div class="bottom-area">
-								<div class="left">
-										0.099 ETH
-								</div>
-								<div class="right">
-										<img src="assets/images/icon2.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-winer">
-							<div class="top-area">
-								<div class="left">
-									<h4 class="name">
-											Jeff Mack
-									</h4>
-									<p class="date">
-											01.08.2019
-									</p>
-								</div>
-								<div class="right">
-									<p class="id">#5747e75482</p>
-								</div>
-							</div>
-							<div class="bottom-area">
-								<div class="left">
-										0.099 ETH
-								</div>
-								<div class="right">
-										<img src="assets/images/icon2.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-winer">
-							<div class="top-area">
-								<div class="left">
-									<h4 class="name">
-											Neal Morris
-									</h4>
-									<p class="date">
-											01.08.2019
-									</p>
-								</div>
-								<div class="right">
-									<p class="id">#5747e75482</p>
-								</div>
-							</div>
-							<div class="bottom-area">
-								<div class="left">
-										0.099 ETH
-								</div>
-								<div class="right">
-										<img src="assets/images/icon2.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 text-xl-center">
-						<a class="mybtn2" href="#">View All </a>
-					</div>
-				</div>
-		</div>
-	</section> 
 	<!-- Recent Winners Area End -->
 
 	<!-- Footer Area Start -->
 	<footer class="footer" id="footer">
 			<div class="subscribe-area">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="subscribe-box">
-									<form action="#">
-								<div class="row">
-									<div class="col-lg-12">
-										<div class="heading-area">
-												<h5 class="sub-title2">
-														subscribe to Dooplo
-												</h5>
-												<h4 class="title">
-														To Get Exclusive Benefits
-												</h4>
-										</div>
-									</div>
-									<div class="col-lg-3 col-4 d-flex align-self-center">
-										<div class="icon">
-											<img src="assets/images/mail-box.png" alt="">
-										</div>
-									</div>
-									<div class="col-lg-6 col-8 d-flex align-self-center">
-										<div class="form-area">
-												<input type="text" placeholder="Your Email Address">
-										</div>
-									</div>
-									<div class="col-lg-3 d-flex align-self-center">
-										<div class="button-area">
-											<button class="mybtn1" type="submit">Subscribe
-												<span><i class="fas fa-paper-plane"></i></span>
-											</button>
-										</div>
-									</div>
-								</div>
-							</form>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 			<div class="container">
@@ -1727,7 +1506,7 @@
 				</div>
 			</div>
 		<!-- SignIn Area End -->
-
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<!-- jquery -->
 	<script src="assets/js/jquery.js"></script>
 	<!-- popper -->
@@ -1741,7 +1520,9 @@
 	<script src="assets/js/TweenMax.js"></script>
 	<script src="assets/js/mousemoveparallax.js"></script>
 	<!-- main -->
-	<script src="assets/js/main.js"></script>
+	<script async src="assets/js/main.js"></script>
+	<script async src="assets/js/click.js"></script>
+
 </body>
 
 

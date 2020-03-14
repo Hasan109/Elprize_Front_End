@@ -17,6 +17,7 @@ $(function ($) {
     $('[data-countdown]').each(function () {
         var $this = $(this),
             finalDate = $(this).data('countdown');
+            
         $this.countdown(finalDate, function (event) {
             $this.html(event.strftime('<span>%DD : </span> <span>%HH : </span>  <span>%MM : </span> <span>%SS</span>'));
         });
@@ -119,10 +120,6 @@ $(function ($) {
 
 });
 
-
-  
-
-
     /*-------------------------------
         back to top
     ------------------------------*/
@@ -211,8 +208,42 @@ $(function ($) {
    
 
 });
+let passChek= document.getElementById("passCheckbox");
+
+let enterPass= document.querySelector(".enterPass");
+
+let count=0;
+passChek.addEventListener("click", function(){
+    if (count%2==0) 
+    {
+    enterPass.style.display = 'block';
+    }else{
+    enterPass.style.display = 'none';
+    }
+    count++;
+});
 
 
+
+
+function Videoss() {
+
+    let has_price=videosa;
+    if (has_price == 'true') {
+        swal({
+           title: "Təbriklər",
+           text: "Siz qazandınız!",
+           icon: "success",
+           button: "Ok",
+      });
+    }else {
+        reklamSection.style.height = '300px'; 
+        btn3.style.display = 'block' ;
+        mp.style.display = 'none';
+         $('#button-3').addClass('shrinkreverse');
+         $('#button-3').removeClass('shrink-button')
+    }
+}
 let per=document.querySelector(".per");
 
 let acc= document.querySelector(".acc");
@@ -242,12 +273,14 @@ let login= document.getElementById("login");
  directRegs.addEventListener("click", function(e){
          login.style.display = 'none';
          signin.style.display = 'block';
-           this.classList.remove("modal-backdrop") ;
+        this.classList.remove("modal-backdrop") ;
 
  })
 
+
     $(document).ready(function(){
-$('#action_menu_btn').click(function(){
+    $('#action_menu_btn').click(function(){
     $('.action_menu').toggle();
 });
     });
+

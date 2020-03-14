@@ -27,17 +27,12 @@
 
 <body>
 	<!-- preloader area start -->
-	<div class="preloader" id="preloader">
-		<div class="loader loader-1">
-			<div class="loader-outter"></div>
-			<div class="loader-inner"></div>
-		</div>
-	</div>
+	
 	<!-- preloader area end -->
 
 	<!-- Header Area Start  -->
-	<!-- <header class="header">
-		<!-- Top Header Area Start -->
+	<!-- <header class="header"> -->
+		<!-- Top Header Area Start
 		<section class="top-header">
 			<div class="container">
 				<div class="row">
@@ -180,8 +175,8 @@
 				</div>
 			</div>
 		</section>
-		<!-- Top Header Area End -->
-		<!--Main-Menu Area Start--> -->
+		<--Top Header Area End -->
+		<!--Main-Menu Area Start-->
 	<!-- 	<div class="mainmenu-area">
 			<div class="container">
 				<div class="row">
@@ -252,29 +247,29 @@
 		</div> -->
 		<!--Main-Menu Area Start-->
 	<!-- </header> -->
-
-	<div class="wrapper">
-  <div class="container">
-    <div class="btn open">
-			Click Me!
-		</div>
-		<div class="circle"></div>
-		<div class="modal">
-			<div class="modal-container">
-				<div class="title">
-					The More You Know
-					<i class="fa fa-times close"></i>
-				</div>
-				<div class="copy">
-					Modals are a great way to give your user access to additional or supporting information without taking up extra space on the page. This swing out modal is animated with SASS, with a little jQuery to help out with clicked states.
-				</div>
-				<div class="btn close">
-					Continue
-				</div>
-			</div>
+<div class="container">
+  <button id="button-3" class="button-3">Click me</button>
+</div>
+<div  class="container">
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="viedoport" class="videos">
+  				<video id="videos" onended="Videoss()" data-hasprice="true" src="assets/images/empori.mp4" autoplay controls type="video/mp4"></video>
+  			</div>
+  			<!-- <div id="imageport">
+  				<img src="assets/images/pragma.jpg" id="images" data-hasprice="true" alt="">
+  			</div> -->
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+<!-- end of container -->
+  
 	<!-- Header Area End  -->
 
 	<!-- Breadcrumb Area Start -->
@@ -605,9 +600,7 @@
 	<!-- Footer Area End -->
 
 	<!-- Back to Top Start -->
-	<div class="bottomtotop">
-		<i class="fas fa-chevron-right"></i>
-	</div>
+	
 	<!-- Back to Top End -->
 
 	<!-- Login Area Start -->
@@ -720,6 +713,7 @@
 		<!-- SignIn Area End -->
 
 	<!-- jquery -->
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="assets/js/jquery.js"></script>
 	<!-- popper -->
 	<script src="assets/js/popper.min.js"></script>

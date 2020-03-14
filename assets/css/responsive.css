@@ -761,7 +761,7 @@ div#main_menu .navbar-nav{
 
 @media  (max-width: 575px) {
   .hero-area {
-    padding: 232px 0px 265px;
+    padding: 232px 0px 130px;
   }
   .hero-area .left-content .content .subtitle {
     font-size: 20px;
