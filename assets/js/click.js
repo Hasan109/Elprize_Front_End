@@ -133,7 +133,7 @@ const fallCoins = (n) => {
 
 function Videoss() {
 
-	let has_price = videosa;
+	let has_price = 'false';
 	if (has_price == 'true') {
 		//Coins falling
 		coins.style.display = 'block';
@@ -152,6 +152,7 @@ function Videoss() {
 	} else {
 		// videoicon.style.display = 'block' ;
 		videoContent.style.display = 'none';
+		// videoContent.setAttribute('src','assets/images/omega.mp4')
 		$('#button-3').addClass('shrinkreverse');
 		$('#button-3').removeClass('shrink-button')
 	}
