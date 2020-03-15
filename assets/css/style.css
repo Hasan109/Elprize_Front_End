@@ -2364,7 +2364,7 @@ select:focus {
       margin-bottom: 57px; }
     .lottery-area .daily-lottery .draw-time {
       background-color: #553981;   
-      padding: 53px 0px 53px;
+      padding: 0px 0px 53px;
       text-align: center; }
       .lottery-area .daily-lottery .draw-time .subtitle {
         font-size: 24px;
@@ -4129,7 +4129,10 @@ select:focus {
 /* login modal Area Start */
 .login-modal .modal-dialog .modal-content {
   background: #252f5a;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border: 1px solid #c39602;
+
+   }
   .login-modal .modal-dialog .modal-content .modal-body {
     padding: 0px; }
     .login-modal .modal-dialog .modal-content .modal-body .logo-area {
@@ -4861,13 +4864,62 @@ select:focus {
 .section-controller nav ul li:hover{
   color:#fec200;
   border-color: #fec200;
-<<<<<<< HEAD
+
   background-color:#1c2652;
 }
 #section-selector-active{
   color:#fec200;
   background-color:#1c2652;
   border-color:#1c2652;
-=======
->>>>>>> 0e2de2f448cc4d4f8a2ca4494f9fa2f08dfdb5b9
+}
+
+
+.buyelprize{
+  
+  height: 400px;
+  width: 100%;
+  background-color: #553981;
+  position: relative;
+  top: 80px;
+}
+
+.treausery{
+
+  height: 200px;
+  border: 1px solid tomato;
+  position: relative;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.treausery .oduba{
+
+    position: relative;
+    top: 23px;
+    right: 18px;
+    height: 65%;
+    width: 50%;
+    justify-content: center;
+    display: inline-block;
+}
+
+.treausery h3{
+    display: inline-block;
+    position: relative;
+    top: 49px;
+    right: 10px;
+}
+
+.posd {
+    width: 100px ;
+    height: 33px ;
+    position: relative ;
+    top: 47px ;
+    left: -13px ;
+    /*display: inline-block;*/
+}
+
+#personalInfo{
+  display: none;
 }

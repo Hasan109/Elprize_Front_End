@@ -57,6 +57,7 @@ $(function ($) {
         }
     });
 
+
     // payment Slider
     var $method_slider = $('.method-slider');
     $method_slider.owlCarousel({
@@ -120,6 +121,8 @@ $(function ($) {
 
 });
 
+
+
     /*-------------------------------
         back to top
     ------------------------------*/
@@ -153,6 +156,14 @@ $(function ($) {
 
     });
 
+
+
+    // Registr modal Start
+    
+
+        // Registr modal End
+ 
+
     $(window).on('load', function () {
   
     /*---------------------
@@ -169,30 +180,7 @@ $(function ($) {
     
     });
 
-    let elPrize= document.getElementById("elPrize");
-
-    let dollar= document.getElementById("dollar");
-
-    let chngBtn= document.getElementById("chngBtn1");
-
-    let valyuta=elPrize.value;
-
-    elPrize.addEventListener("focusout", function(){
-
-         dollar.value=elPrize.value*50;
-      
-    })
-    elPrize.addEventListener("mouseover", function(){
-
-         dollar.value=elPrize.value*50;
-      
-    })
-
-    chngBtn.addEventListener("mouseover", function(){
-         dollar.value=elPrize.value*50;
-    })
   
-
     
     /*-----------------------------
         Cart Page Quantity 
@@ -232,7 +220,7 @@ $(function ($) {
 });
 let passChek= document.getElementById("passCheckbox");
 
-let enterPass= document.querySelector(".enterPass");
+let enterPass= document.getElementById("enterPass");
 
 let count=0;
 passChek.addEventListener("click", function(){
@@ -244,6 +232,52 @@ passChek.addEventListener("click", function(){
     }
     count++;
 });
+
+  // let singgnin= document.getElementById("singgnin");
+    
+    // let singgnup= document.getElementById("singgnup");
+
+    // let signhup= document.getElementById("signhup");
+
+    // let personalInfo = document.getElementById("personalInfo");
+
+    //     singgnin.addEventListener("click", function(){
+    //          signhup.style.display = 'block';
+    //          personalInfo.style.display = 'none';  
+
+    //     })   
+
+    //     singgnup.addEventListener("click", function(){
+    //         personalInfo.style.display = 'block';
+    //         signhup.style.display = 'none';
+            
+    //     })
+
+    let elPrize= document.getElementById("elPrize");
+
+    let dollar= document.getElementById("dollar");
+
+    let chngBtn= document.getElementById("chngBtn1");
+
+    let valyuta=elPrize.value;
+
+    elPrize.addEventListener("focusout", function(){
+
+         dollar.value=elPrize.value*50;
+      
+    })
+    elPrize.addEventListener("mouseover", function(){
+
+         dollar.value=elPrize.value*50;
+      
+    })
+
+    chngBtn.addEventListener("mouseover", function(){
+         dollar.value=elPrize.value*50;
+    })
+  
+
+
 
 
 
@@ -270,7 +304,7 @@ let per=document.querySelector(".per");
 
 let acc= document.querySelector(".acc");
 
-let personalInfo= document.getElementById("personalInfo");
+let personalInfo= document.getElementById("personalInfo1");
 
 let account= document.getElementById("account");
 
